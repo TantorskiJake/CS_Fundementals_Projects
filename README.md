@@ -42,12 +42,8 @@ Welcome to the CS Fundamentals Projects repository! This collection is designed 
 - Navigate to the specific project directory you want to explore.
 - Follow the instructions in each project's README file for a step-by-step guide.
 
-## Contributions
-
-Feel free to contribute by adding new projects, improving existing ones, or suggesting enhancements. Fork the repository, make your changes, and submit a pull request.
-
 ## Feedback
 
-If you have any feedback, questions, or issues, please open an [issue](https://github.com/yourusername/CS_Fundamentals_Projects/issues).
+If you have any feedback, questions, or issues, please open an [issue](https://github.com/TantorskiJake/CS_Fundamentals_Projects/issues).
 
 Happy coding!
