@@ -1,4 +1,4 @@
-# Calculator Readme
+# Calculator README
 
 ## Description
 
