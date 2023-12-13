@@ -14,7 +14,27 @@ Welcome to the CS Fundamentals Projects repository! This collection is designed 
 
 5. **Functions and Modular Programming:** Develop a well-organized program with distinct functions.
 
-... (Continue with descriptions for each project)
+6. **Data Structures - Arrays and Lists:** Implement a program utilizing arrays or lists to manage and manipulate data.
+
+7. **Data Structures - Stacks and Queues:** Create a simulation or application that demonstrates the use of stacks or queues.
+
+8. **Object-Oriented Programming Concepts:** Design a simple system using classes and objects to represent real-world entities.
+
+9. **Classes and Objects:** Extend the previous project by adding more classes and refining the object interactions.
+
+10. **File Handling and Input/Output:** Develop a program that reads data from a file, processes it, and writes the results back to another file.
+
+11. **Algorithm Design and Analysis:** Implement a basic algorithm, analyze its time complexity, and compare it with alternative approaches.
+
+12. **Searching and Sorting Algorithms:** Create a program that uses different searching and sorting algorithms and compare their performance.
+
+13. **Databases and SQL:** Build a simple database-driven application using SQL to manage and query data.
+
+14. **Web Development Basics - HTML, CSS, and JavaScript:** Construct a basic webpage with interactive elements using HTML, CSS, and JavaScript.
+
+15. **Introduction to Software Development Life Cycle:** Outline a software development plan for a hypothetical project, including stages and milestones.
+
+16. **Final Project and Review:** Combine learned concepts into a comprehensive final project, demonstrating proficiency in various aspects of programming and computer science.
 
 ## How to Use
 
