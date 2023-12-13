@@ -1,9 +1,9 @@
+# Jake Tantorski December 13th, 2023
+
 # Import the math module for mathematical operations
 import math
 
 # Define a Calculator class to encapsulate calculator functionalities
-
-
 class Calculator:
     # Initialize the calculator with a memory variable set to None
     def __init__(self):
@@ -86,13 +86,10 @@ operations = {
 def get_user_input():
     while True:
         try:
-            num1 = float(input("Enter the first number: "))
-            num2 = None
-            if choice in ('1', '2', '3', '4', '5', '6'):
-                num2 = float(input("Enter the second number: "))
-            return num1, num2
+            num1 = float(input("Enter the number: "))
+            return num1
         except ValueError:
-            print("Invalid input. Please enter numeric values.")
+            print("Invalid input. Please enter a numeric value.")
 
 # Define a function to display the result
 def display_result(result):
@@ -122,16 +119,17 @@ while True:
 
     # Check if the user choice is a valid operation
     if choice in operations:
-        try:
-            num1, num2 = get_user_input()
-            # Execute the selected operation and display the result
-            result = operations[choice](num1, num2) if choice in (
-                '1', '2', '3', '4', '5', '6') else operations[choice](num1)
-            display_result(result)
-        except ValueError:
-            print("Invalid input. Please enter numeric values.")
+        num1 = get_user_input()
 
-    # Check if the user choice is to store a value in memory
+        if choice in ('6', '7', '8', '9'):
+            # Execute the selected operation and display the result
+            result = operations[choice](num1)
+            display_result(result)
+        else:
+            num2 = get_user_input()
+            # Execute the selected operation and display the result
+            result = operations[choice](num1, num2)
+            display_result(result)
     elif choice == '11':
         try:
             value_to_store = float(input("Enter value to store in memory: "))
@@ -139,12 +137,8 @@ while True:
             print("Value stored in memory.")
         except ValueError:
             print("Invalid input. Please enter a numeric value.")
-
-    # Check if the user choice is to recall a value from memory
     elif choice == '12':
         recalled_value = calculator.recall_memory()
         print("Recalled value from memory:", recalled_value)
-
-    # Handle invalid choices
     else:
         print("Invalid choice. Please enter a number between 1 and 13.")
