@@ -85,25 +85,22 @@ operations = {
 }
 
 # Define a function to get user input for numbers
-
-
 def get_user_input():
     while True:
         try:
             num1 = float(input("Enter the first number: "))
-            num2 = float(input("Enter the second number (if applicable): "))
+            num2 = None
+            if choice in ('1', '2', '3', '4', '5', '6'):
+                num2 = float(input("Enter the second number: "))
             return num1, num2
         except ValueError:
             print("Invalid input. Please enter numeric values.")
 
 # Define a function to display the result
-
-
 def display_result(result):
     # Use f-string for a more formatted and visually appealing result display
     print(f"Result: {result:.6f}" if isinstance(
         result, float) else f"Result: {result}")
-
 
 # Main program loop
 while True:
@@ -127,17 +124,23 @@ while True:
 
     # Check if the user choice is a valid operation
     if choice in operations:
-        num1, num2 = get_user_input()
-        # Execute the selected operation and display the result
-        result = operations[choice](num1, num2) if choice in (
-            '1', '2', '3', '4', '5', '6') else operations[choice](num1)
-        display_result(result)
+        try:
+            num1, num2 = get_user_input()
+            # Execute the selected operation and display the result
+            result = operations[choice](num1, num2) if choice in (
+                '1', '2', '3', '4', '5', '6') else operations[choice](num1)
+            display_result(result)
+        except ValueError:
+            print("Invalid input. Please enter numeric values.")
 
     # Check if the user choice is to store a value in memory
     elif choice == '11':
-        value_to_store = float(input("Enter value to store in memory: "))
-        calculator.store_in_memory(value_to_store)
-        print("Value stored in memory.")
+        try:
+            value_to_store = float(input("Enter value to store in memory: "))
+            calculator.store_in_memory(value_to_store)
+            print("Value stored in memory.")
+        except ValueError:
+            print("Invalid input. Please enter a numeric value.")
 
     # Check if the user choice is to recall a value from memory
     elif choice == '12':
