@@ -1,3 +1,5 @@
+# Jake Tantorski December 13th, 2023
+
 # Import the math module for mathematical operations
 import math
 
