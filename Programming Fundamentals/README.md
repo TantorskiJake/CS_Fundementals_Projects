@@ -25,14 +25,6 @@ This Python calculator program provides a command-line interface for performing 
    - '11': Store in Memory - Save a value to memory.
    - '12': Recall Memory - Retrieve the stored value.
 
-## Examples
-
-- **Addition (1):**
-
-- **Sine Function (7):**
-
-- **Recall Memory (12):**
-
 ## Dependencies
 
 The program uses the `math` module for mathematical operations.
